@@ -81,7 +81,7 @@ def login_and_top():
 
 if __name__ == '__main__':
 	user_name = 'lxzcyh'
-	user_pwd = 'cl@lxz1314shuimu'
+	user_pwd = ''
 	home_page_url = 'http://www.newsmth.net/nForum/index'
 	file_shuimu_post_urls = './posts_tool/shuimu_post_urls.txt'
 	interval_of_top_post = 8  # 循环顶帖的时间间隔
