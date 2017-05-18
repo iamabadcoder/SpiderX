@@ -53,7 +53,7 @@ def top_post(driver, post_url):
 if __name__ == '__main__':
 
 	user_name = 'lxzcyh'
-	user_pwd = 'cl@lxz1314byr'
+	user_pwd = ''
 	home_page_url = 'https://bbs.byr.cn/#!default'
 	post_urls = ['https://bbs.byr.cn/#!article/Jump/post/25367']
 
