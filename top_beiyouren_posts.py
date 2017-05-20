@@ -41,7 +41,7 @@ def login(driver, home_page_url):
         id_element.send_keys(conf.get("beiyouren", "name"))
         time.sleep(1)
         # passwd_element.clear()
-        passwd_element.send_keys(conf.get("beiyouren", "name"))
+        passwd_element.send_keys(conf.get("beiyouren", "pwd"))
         time.sleep(1)
         submit_element.click()
         time.sleep(3)
