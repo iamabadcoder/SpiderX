@@ -56,7 +56,7 @@ def top_post(driver, post_url):
         post_content_element.click()
         time.sleep(1)
         post_content_element.clear()
-        post_content_element.send_keys('up')
+        post_content_element.send_keys('up up up')
     except TimeoutException:
         print 'TimeoutException occur when top_post'
 
@@ -82,11 +82,11 @@ def login_and_top():
 
 if __name__ == '__main__':
     conf = ConfigParser.ConfigParser()
-    conf.read('account.conf')
+    conf.read('./posts_tool/account.conf')
     home_page_url = 'https://bbs.byr.cn/#!default'
     file_shuimu_post_urls = './posts_tool/beiyouren_post_urls.txt'
-    interval_of_top_post = 10  # 循环顶帖的时间间隔
-    cycle_time = 300  # 程序运行周期
+    interval_of_top_post = 5 # 循环顶帖的时间间隔
+    cycle_time = 120  # 程序运行周期
 
     driver = webdriver.Chrome('./drivers/chromedriver')
     driver.maximize_window()
